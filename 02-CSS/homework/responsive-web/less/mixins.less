@@ -1,0 +1,18 @@
+// Mixins acá
+.btn(@background-color, @font-color) {
+    background-color: @background-color;
+    color: @font-color;
+    border: 1px solid @background-color;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-hover(@background-color-hover, @font-color-hover) {
+    &:hover {
+        background-color: @background-color-hover;
+        color: @font-color-hover;
+    }
+}
